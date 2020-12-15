@@ -6,6 +6,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 .txtGreen {
   color: #37b396;
@@ -15,6 +17,7 @@
   background-color: #ccf5e7;
 }
 .title {
+  margin-top: 3rem;
   font-family: "Scada", sans-serif;
   font-size: 18.5px;
   font-weight: 500;
@@ -202,5 +205,8 @@
   .container {
     padding-right: 0;
     padding-left: 0;
+  }
+  .imageFooter {
+    display: block;
   }
 }
