@@ -13,6 +13,11 @@
   color: #37b396;
   font-weight: bolder;
 }
+
+.txtGrey {
+  color: #adadad;
+}
+
 .bgGreen {
   background-color: #ccf5e7;
 }

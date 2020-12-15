@@ -35,8 +35,7 @@ const Card = ({ info }) => {
             {/* <h2>{info.college_name.split(" - ")[0]} Rating</h2> */}
             <h3>
               {`${info.nearest_place[0]} | `}
-              <span></span>
-              {info.nearest_place[1]}
+              <span className={styles.txtGrey}>{info.nearest_place[1]}</span>
             </h3>
             <span className={styles.flex}>
               <p className={styles.txtGreen}>93% : &nbsp;</p>
@@ -46,7 +45,10 @@ const Card = ({ info }) => {
           <div className={styles.textRight}>
             <p>
               <span className={styles.strike}>₹{info.original_fees}</span>
-              <span> {`<${info.discount}`}</span>
+              <span className={styles.discountIcon}>
+                {" "}
+                {`<${info.discount}`}
+              </span>
             </p>
             <p className={styles.discountedRed}>₹ {info.discounted_fees}</p>
             <p className={styles.feesCycle}>{info.fees_cycle}</p>
