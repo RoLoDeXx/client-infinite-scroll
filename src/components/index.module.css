@@ -7,20 +7,59 @@
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
 }
+.txtGreen {
+  color: #37b396;
+  font-weight: bolder;
+}
+.bgGreen {
+  background-color: #ccf5e7;
+}
+.title {
+  font-family: "Scada", sans-serif;
+  font-size: 18.5px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.97;
+  letter-spacing: normal;
+  text-align: left;
+  color: #444444;
+}
 
 .card {
+  font-family: "Scada", sans-serif;
   box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  border-radius: 8px;
+  border-radius: 3.8px;
+}
+
+.card h2 {
+  font-size: 18.5px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.97;
+  letter-spacing: normal;
+  color: #444444;
+}
+
+.card h3 {
+  font-size: 13.5px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #444444;
 }
 
 .card img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 3.8px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 
-  filter: brightness(40%);
+  filter: brightness(30%);
 }
 
 .card:hover {
@@ -30,11 +69,11 @@
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  margin-left: -10px;
+  margin-left: -25px;
 }
 
 .body {
-  padding: 0.75rem;
+  padding: 0.75rem 1.5rem;
 }
 
 .flex {
@@ -49,6 +88,46 @@
 
 .strike {
   text-decoration: line-through;
+  font-size: 11px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.64;
+  letter-spacing: normal;
+  text-align: center;
+  color: #444444;
+}
+
+.discountedRed {
+  font-size: 28.5px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.89;
+  letter-spacing: normal;
+  color: #dd1c26;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.feesCycle {
+  margin-top: 8px;
+  font-size: 11px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.64;
+  letter-spacing: normal;
+  text-align: center;
+  color: #444444;
+}
+
+.offerTxt {
+  padding: 11px 21px 11px 17px;
+  background-color: #ccf5e7;
+  border-radius: 50px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .textRight {
@@ -70,30 +149,50 @@
 }
 
 .ratingBlock {
-  text-align: right;
+  text-align: center;
   margin: 1rem;
   margin-top: 1rem;
-  margin-bottom: -5.5rem;
+  margin-bottom: -7rem;
   position: relative;
   z-index: 10;
-  background: yellow;
+  background: #f5a626;
   margin-left: auto;
   width: fit-content;
   padding: 0.5rem 0.75rem;
+  font-size: 13.5px;
+  color: white;
+  border-radius: 3.8px;
 }
 
+.bigText {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* .ratingBlock > span {
+  font-size: 18px;
+} */
+
 .promoted {
-  margin-top: -1rem;
+  margin-top: -1.5rem;
   margin-bottom: 1.5rem;
   z-index: 10;
-  position: relative;
-  text-align: right;
+  text-align: center;
   position: relative;
   z-index: 10;
-  background: skyblue;
   margin-left: auto;
   width: fit-content;
-  padding: 1rem;
+  font-size: 15px;
+  border-bottom: 25px solid #68a7ff;
+  border-top: 25px solid #68a7ff;
+  border-right: 30px solid #68a7ff;
+  border-left: 30px solid transparent;
+
+  height: 0;
+  color: #fff;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
 }
 
 @media only screen and (max-width: 768px) {

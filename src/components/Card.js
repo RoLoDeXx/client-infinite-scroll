@@ -7,8 +7,9 @@ const Card = ({ info }) => {
       {info.promoted && <div className={styles.promoted}>Promoted</div>}
       <div>
         <div className={styles.ratingBlock}>
-          <span>{info.rating}</span>
-          /5
+          <span className={styles.bigText}>{info.rating}</span>
+          /5 <br />
+          {info.rating_remarks}
         </div>
         <img src={image} alt="college_background" />
       </div>
@@ -36,7 +37,7 @@ const Card = ({ info }) => {
               {info.nearest_place[1]}
             </h3>
             <span className={styles.flex}>
-              <p>MATCH% : &nbsp;</p>
+              <p className={styles.txtGreen}>93% : &nbsp;</p>
               <p>{info.famous_nearest_places}</p>
             </span>
           </div>
@@ -45,13 +46,13 @@ const Card = ({ info }) => {
               <span className={styles.strike}>₹{info.original_fees}</span>
               <span> {`<${info.discount}`}</span>
             </p>
-            <p>₹ {info.discounted_fees}</p>
-            <p>{info.fees_cycle}</p>
+            <p className={styles.discountedRed}>₹ {info.discounted_fees}</p>
+            <p className={styles.feesCycle}>{info.fees_cycle}</p>
           </div>
         </div>
         <div className={styles.cardFooter}>
           <div className={styles.offerTxt}>{info.offertext}</div>
-          <p>{info.amenties.join(" • ")}</p>
+          <p className={styles.txtGreen}>{info.amenties.join(" • ")}</p>
         </div>
       </div>
     </div>
