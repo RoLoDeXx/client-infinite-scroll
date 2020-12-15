@@ -45,9 +45,11 @@ const Card = ({ info }) => {
           <div className={styles.textRight}>
             <p>
               <span className={styles.strike}>₹{info.original_fees}</span>
-              <span className={styles.discountIcon}>
-                {" "}
-                {`<${info.discount}`}
+              <span>
+                <span className={styles.arrRight}> </span>
+                <span
+                  className={styles.discountIcon}
+                >{`• ${info.discount}`}</span>
               </span>
             </p>
             <p className={styles.discountedRed}>₹ {info.discounted_fees}</p>
