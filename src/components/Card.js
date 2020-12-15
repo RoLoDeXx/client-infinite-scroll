@@ -4,7 +4,9 @@ import image from "../assets/college_01.jpg";
 const Card = ({ info }) => {
   return (
     <div className={styles.card}>
-      {info.promoted && <div className={styles.promoted}>Promoted</div>}
+      {info.promoted && (
+        <div className={styles.promoted}>&nbsp;&nbsp;&nbsp;&nbsp;Promoted</div>
+      )}
       <div>
         <div className={styles.ratingBlock}>
           <span className={styles.bigText}>{info.rating}</span>
