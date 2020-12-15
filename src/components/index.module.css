@@ -1,0 +1,107 @@
+.container {
+  padding: 0 2rem;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.card {
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
+  filter: brightness(40%);
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.cardFooter {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-left: -10px;
+}
+
+.body {
+  padding: 0.75rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flexAlignCenterJustifyBetween {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.textRight {
+  text-align: right;
+}
+.imageFooter {
+  margin-top: -4rem;
+  position: relative;
+  color: white;
+  padding: 0 1rem;
+}
+
+.chip {
+  color: #777;
+  background: white;
+  margin-right: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 50px;
+}
+
+.ratingBlock {
+  text-align: right;
+  margin: 1rem;
+  margin-top: 1rem;
+  margin-bottom: -5.5rem;
+  position: relative;
+  z-index: 10;
+  background: yellow;
+  margin-left: auto;
+  width: fit-content;
+  padding: 0.5rem 0.75rem;
+}
+
+.promoted {
+  margin-top: -1rem;
+  margin-bottom: 1.5rem;
+  z-index: 10;
+  position: relative;
+  text-align: right;
+  position: relative;
+  z-index: 10;
+  background: skyblue;
+  margin-left: auto;
+  width: fit-content;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .mainGrid {
+    grid-template-columns: 1fr;
+  }
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
